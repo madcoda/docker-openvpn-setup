@@ -1,0 +1,11 @@
+# example docker-compose file
+# if you prefer using docker-compose
+server:
+  image: "kylemanna/openvpn:latest"
+  container_name: "${OVPN_DOCKER_NAME}"
+  volumes:
+    - "${OVPN_DATA}:/etc/openvpn"
+  ports:
+    - "${OVPN_PORT}:1194"
+  cap_add:
+    - NET_ADMIN
