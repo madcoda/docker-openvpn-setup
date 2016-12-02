@@ -1,5 +1,8 @@
 # docker-openvpn-setup
-Collection of shell scripts to setup docker-openvpn
+Collection of shell scripts to setup docker-openvpn (using the *kylemanna/docker-openvpn* docker image)
+
+#### Links
+* [kylemanna/docker-openvpn](https://github.com/kylemanna/docker-openvpn)
 
 ## Quick Start
 Prepare, run these commands one by one
