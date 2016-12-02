@@ -25,12 +25,20 @@ OVPN_HOSTNAME=tcp://remote.example.com
 OVPN_DOCKER_NAME=ovpn
 ```
 
-Setup
+Setup which will generate all the certs, keys
+
+you will be prompted to enter a Common Name, and PEM passphrase (required)
+
 ```bash
 ./ovpn init
 ./ovpn create
 ```
 Create account for "john"
+
+you will be prompted to enter the passphrase you previously entered
+
+This command will generate a no-password client (modify the script if you want to set a password)
+
 ```bash
 ./ovpn buildclient john
 ./ovpn getclient john
