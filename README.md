@@ -45,6 +45,7 @@ This command will generate a no-password client (modify the script if you want t
 ```
 You will then find a "john.ovpn" file in your current directory, send to your client
 
+*Note: If you use a port other than 1194, you may need to edit "john.ovpn" and change it*
 
 ## Uninstall
 If you don't want to use anymore, or messed up the settings, you can undo all of the above by these commands
