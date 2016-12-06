@@ -42,7 +42,7 @@ read_options(){
 			docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient $2 > $2.ovpn
 			;;
 		"create") 
-			docker run -v $OVPN_DATA:/etc/openvpn -d -p $OVPN_PORT:1194 --name $OVPN_DOCKER_NAME --cap-add=NET_ADMIN kylemanna/openvpn
+			docker run -v $OVPN_DATA:/etc/openvpn -d -p $OVPN_PORT:1194/tcp -p $OVPN_PORT:1194/udp  --name $OVPN_DOCKER_NAME --cap-add=NET_ADMIN kylemanna/openvpn
 			echo "Container $OVPN_DOCKER_NAME Created"
 			;;
 		"start") 
